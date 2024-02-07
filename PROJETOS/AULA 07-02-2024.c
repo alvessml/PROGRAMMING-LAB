@@ -14,7 +14,7 @@ int main() {
     printf("Soma: %d\n", (a + b));
     printf("Subtração: %d\n", (a - b));
     printf("Multiplicação: %d\n", (a * b));
-    printf("Divisão: %.2f\n", ((float)a + b));
+    printf("Divisão: %.2f\n", ((float)a / b));
 
     // Troca de variáveis:
     int(aux);
