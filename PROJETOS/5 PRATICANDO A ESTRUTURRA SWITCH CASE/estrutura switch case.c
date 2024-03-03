@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    double res;
+    int res;
 
     int x,y;
     puts("Digite o primeiro valor: ");
@@ -10,15 +10,17 @@ int main(){
     puts("Digite o segundo valor: ");
     scanf(" %d", & y);
 
-    puts("Escolha: ");
+    puts("\nEscolha: ");
     puts("1. para somar");
-    puts("2 para subtrair");
+    puts("2. para subtrair");
     puts("3. para dividir");
-    puts("4. para multiplicar \n \n");
+    puts("4. para multiplicar \n");
     
     char expressao = getchar();
+
+    scanf("%c", & expressao);
     
-    printf("Digite a expresão: %d\n", expressao);
+    printf("\nOperação: %c \n", expressao);
     
     switch (expressao)
         {
@@ -37,10 +39,9 @@ int main(){
         
         default:
             puts("Expressão inválido! Digite novamente!");
-            return 1;
         }
 
-    print("Reposta: %d \n", res);
+    printf("Reposta: %d \n", res);
 
     return 0;
 }
