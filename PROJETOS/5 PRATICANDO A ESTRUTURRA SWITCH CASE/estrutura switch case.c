@@ -4,11 +4,15 @@ int main(){
     int res;
 
     int x,y;
+
+    char op;
+
     puts("Digite o primeiro valor: ");
-    scanf(" %d", & x);
+    // scanf(" %d", & x);
+    scanf("%d%*c", & x);
 
     puts("Digite o segundo valor: ");
-    scanf(" %d", & y);
+    scanf("%d%*c", & y);
 
     puts("\nEscolha: ");
     puts("1. para somar");
@@ -16,13 +20,13 @@ int main(){
     puts("3. para dividir");
     puts("4. para multiplicar \n");
     
-    char expressao = getchar();
+    getchar();
 
-    scanf("%c", & expressao);
+    op = getchar();
+
+    scanf("%c", & op);
     
-    printf("\nOperação: %c \n", expressao);
-    
-    switch (expressao)
+    switch (op)
         {
         case '1':
             res = x + y;
