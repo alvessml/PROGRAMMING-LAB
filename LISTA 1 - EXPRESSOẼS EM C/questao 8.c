@@ -10,7 +10,7 @@ int main(){
 
     resultado = pow(x, y); 
 
-    printf("O número %lf elevado ao quadrado é %lf \n", x, resultado);
+    printf("O número %.2lf elevado ao quadrado é %.2lf \n", x, resultado);
 
     return 0;
 }
