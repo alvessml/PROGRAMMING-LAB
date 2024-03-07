@@ -5,7 +5,7 @@ int main(){
 
     printf("Valor da cotação atual do dolar para real: $"); 
     scanf("%lf", & dolar);
-
+    
     printf("Quantidade de reais para converter em dolar: R$"); 
     scanf("%lf", & real);
 
