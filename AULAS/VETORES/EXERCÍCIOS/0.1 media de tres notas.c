@@ -3,20 +3,20 @@
 #define TAM 3 //macro
 
 int main(){
-    float notas[TAM], soma, total, nota_total;
+    float notas[TAM], soma_tot, nota_total;
 
-    soma = 0;
+    soma_tot = 0;
     for(int x=0; x < TAM; x++){
-        printf("Digite a nota %d\n", x+1);
+        printf("Digite a nota %d: ", x+1);
         scanf("%f", & notas[x]);
-        total += notas[x];
+        soma_tot += notas[x];
+        printf("\n");
     }
-
-    nota_total = total / TAM;
+    nota_total = soma_tot / TAM;
 
 
     if(nota_total >=7){
-        printf("Aprovou! Com nota %.2f\n", nota_total);
+        printf("Aprovado! Com nota %.2f\n", nota_total);
     } else {
         printf("Reprovou! Com nota %.2f.\n", nota_total);
     }
