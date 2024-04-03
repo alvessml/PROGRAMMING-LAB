@@ -43,7 +43,9 @@ int main(){
         menor = (menor > x[k])? x[k]: menor;
     }
 
-    printf("\n");
+     // Saída:
+     printf("\tMaior: %d\n", maior);
+     printf("\tMenor: %d\n", menor);
 
     return 0;
 }
