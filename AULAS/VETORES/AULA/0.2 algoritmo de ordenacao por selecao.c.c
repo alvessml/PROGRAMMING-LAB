@@ -10,7 +10,7 @@ int main(){
     int vet[TAM];
 
     srand(time(NULL));
-    //Preencher o vetor
+    // Preencher o vetor
     for(int k=0; k < TAM; k++){
         vet[k] = rand() % (MAX+1);
     }
@@ -26,6 +26,7 @@ int main(){
     int aux;
     for(int i = 0; i < (TAM-1); i++){
         for(int j = i+1; j < TAM; j++){
+            aux = vet[i];
             if (vet[i] > vet[j]){
                 aux = vet[i];
                 vet[i] = vet[j];
