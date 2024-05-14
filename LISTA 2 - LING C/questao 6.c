@@ -19,8 +19,6 @@ int main(){
             scanf(" %c", & confirmaVoto);
             if(confirmaVoto == 's'){
                 votoBranco += 1;
-                votoPedro += 1;
-                votoRenata += 1;
                 votoTotal += 1;
             } else {
                 printf("\n========================================\n");  
@@ -77,10 +75,10 @@ int main(){
 
     float porcentVotoPedro, porcentVotoRenata, porcentVotoBranco, porcentVotoNulo;
 
-    porcentVotoPedro = (votoPedro/votoTotal)*100;
-    porcentVotoRenata = (votoRenata/votoTotal)*100;
-    porcentVotoBranco = (votoBranco/votoTotal)*100;
-    porcentVotoRenata = (votoNulo/votoTotal)*100;
+    porcentVotoPedro = ((float)votoPedro/votoTotal)*100;
+    porcentVotoRenata = ((float)votoRenata/votoTotal)*100;
+    porcentVotoBranco = ((float)votoBranco/votoTotal)*100;
+    porcentVotoNulo = ((float)votoNulo/votoTotal)*100;
 
     puts("\n\n\nPorcentagem de votos: ");
     printf("\n%.2f%% de votos para o candidato Pedro.", porcentVotoPedro);
