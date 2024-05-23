@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-void calculo_prestacao()
+void calculo_prestacao(){
+    
+}
 
 
 int main(){
