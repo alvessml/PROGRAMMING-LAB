@@ -24,9 +24,10 @@ int main(){
         printf("%d * %d = %d\n", valor, i, valor * i);
     }
 
+    float(fvalor) = valor;
     puts("\n\nTABUADA DE DIVISÃO: \n");
     for(int i = 0; i <= 10; i++){
-        printf("%d / %d = %d\n", valor, i, (valor / i));
+        printf("%d / %d = %.2f\n", valor, i, fvalor / i);
     }
 
     return 0;
