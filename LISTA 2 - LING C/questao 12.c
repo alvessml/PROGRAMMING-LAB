@@ -14,5 +14,20 @@ int main(){
         printf("%d + %d = %d\n", valor, i, valor + i);
     }
 
+    puts("\n\nTABUADA DE SUBTRAÇÃO: \n");
+    for(int i = 0; i <= 10; i++){
+        printf("%d - %d = %d\n", valor, i, valor - i);
+    }
+
+    puts("\n\nTABUADA DE MULTIPLICAÇÃO: \n");
+    for(int i = 0; i <= 10; i++){
+        printf("%d * %d = %d\n", valor, i, valor * i);
+    }
+
+    puts("\n\nTABUADA DE DIVISÃO: \n");
+    for(int i = 0; i <= 10; i++){
+        printf("%d / %d = %d\n", valor, i, (valor / i));
+    }
+
     return 0;
 }
