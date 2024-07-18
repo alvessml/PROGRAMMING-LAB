@@ -15,14 +15,14 @@ int main(){
     // PROCESSAMENTO
     int somatorioDePares = 0;
     
-    if(faixa1 > faixa2){
+    if(faixa2 > faixa1){
         for(int i = faixa1; i <= faixa2; i++){
             if(i % 2 == 0){
                 somatorioDePares += i;
             }
         }
     } else{
-        for(int i = faixa2; i <= faixa1; i--){
+        for(int i = faixa2; i <= faixa1; i++){
             if(i % 2 == 0){
                 somatorioDePares += i;
             }
