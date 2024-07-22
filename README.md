@@ -1,2 +1,2 @@
 # LABORATORIO DE PROGRAMACAO
- Aulas e projetos
+ Racundo de aulas e projetos
