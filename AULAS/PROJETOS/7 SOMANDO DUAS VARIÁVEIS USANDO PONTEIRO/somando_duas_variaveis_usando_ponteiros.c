@@ -20,6 +20,6 @@ int main(){
 
     *pr = *px + *py;
 
-    printf("[%p] %d + [%p] %d = [%p] %d \n\n", *px, &px, *py, &py, *pr, &pr);
+    printf("[%p] %d + [%p] %d = [%p] %d \n\n", &px, *px, &py, *py, &pr, *pr);
     return 0;
 }
