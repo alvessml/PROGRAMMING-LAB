@@ -34,7 +34,7 @@ int main(){
     // Preenchendo o vetor
     srand(time(NULL));
     for(int i=0; i < k; i++){
-        *(p+k) = rand() % MX;
+        *(p+i) = rand() % MX;
     }
 
     for(int i=0; i < k; i++){
