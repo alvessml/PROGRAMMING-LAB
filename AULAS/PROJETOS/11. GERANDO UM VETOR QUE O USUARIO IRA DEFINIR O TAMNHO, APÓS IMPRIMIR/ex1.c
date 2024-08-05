@@ -28,8 +28,16 @@ int main(){
 
     for(int i=0; i < quantLinha * quantColuna; i++){
         printf("%d\t", quantLinha * quantColuna);
-        if((i+1 )) printf("\n");
+        if((i+1)) printf("\n");
     }
+
+    int x, y;
+    printf("\n ***** \n");
+    puts("Entre com (x,y): ");
+    scanf("%d%d", &x, &y);
+
+    int elem = *(p + (quantColuna * x) + y);
+    printf("Elemento: %d\n", elem);
 
     free(p);
     return 0;

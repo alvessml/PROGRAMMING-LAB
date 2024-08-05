@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MX 10;
+#define MX 10
 
 int main(){
     int *p = NULL;
