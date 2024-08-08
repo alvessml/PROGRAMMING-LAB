@@ -13,5 +13,11 @@ int main(){
     int qua = (i / 10) % 10;
     int qui = i % 10;
 
+    if(pri == qui || seg == qua){
+        printf("O número %d é palíndromo.\n", i);
+    } else{
+        printf("O número %d NÃO é palíndromo.", i);
+    }
+
     return 0;
 }
