@@ -16,9 +16,12 @@ int main(){
     puts("Digite o segundo valor: ");
     scanf("%d", & y);
 
-    menu();
-    scanf("%d", & op);
-
+    do{
+        menu();
+        scanf("%d", & op); 
+    } while(op < 1 || op > 4); 
+        puts("Opção inválida! Digite novamente!");
+    
     switch (op){
         case 1:
             printf("A soma de %d + %d = %d.\n", x, y,soma(x, y));
@@ -32,10 +35,6 @@ int main(){
         case 4:
             printf("A divisão de %d / %d = %.2f.\n", x, y, divisao(x, y));
             break;
-    
-        default:
-            puts("Opção inválida! Digite novamente!");
-            return 1;
     }
 
     return 0;
@@ -61,7 +60,7 @@ int multiplicacao(int a, int b){
 }
 
 float divisao(int a, int b){
-    int r;
+    float r;
     r = a / b;
     return r;
 }
