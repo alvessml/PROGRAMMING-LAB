@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+
 int main(){
     //  - USO DE PONTEIROS PARA TRABALHAR MATRIZES/VETORES
 

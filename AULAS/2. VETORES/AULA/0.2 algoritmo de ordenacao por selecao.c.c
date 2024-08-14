@@ -9,7 +9,7 @@ int main(){
 
     int vet[TAM];
 
-    srand(time(NULL));
+    srand(time(NULL)); // vai inicar com um número baseado no tempo time(NULL) - em segundos -.
     // Preencher o vetor
     for(int k=0; k < TAM; k++){
         vet[k] = rand() % (MAX+1);

@@ -13,7 +13,7 @@ int main() {
     // Se o usuário digitar um valor muito grande pode ocorrer travamento do programa;
 
     // CORRETO:
-    // usar função de alocação do sistema
+    // usar função de alocação de sistema
 
     char x[TAM];
 
