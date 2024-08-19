@@ -10,7 +10,7 @@ int main(){
         scanf("%d", & x);
 
         if(x < 0 && x % 2 == 0){
-            break;
+            break;  
         }
         
         if(x > maior){
