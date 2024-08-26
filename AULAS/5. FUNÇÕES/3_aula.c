@@ -43,7 +43,7 @@ int *alocarMemoria(int *p, int t){
     return pr;
 }
 
-void *preencherVetor(int *p,  int posicaoInicial, int quant, int t){
+void preencherVetor(int *p,  int posicaoInicial, int quant, int t){
     for(int k=posicaoInicial; k < quant; k++){
         *(p+k) = rand() % t;
     }
@@ -51,6 +51,6 @@ void *preencherVetor(int *p,  int posicaoInicial, int quant, int t){
 
 void ixibirVetor()
 
-void *imprimirVetor(){
+void imprimirVetor(){
     
 }
