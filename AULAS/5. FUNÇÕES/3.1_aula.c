@@ -18,5 +18,5 @@ int main(){
 }
 
 void imprimirNumero(int x){
-    printf("%d", x);
+    printf("%d\n", x);
 }
