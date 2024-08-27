@@ -2,9 +2,13 @@
 
 
 int main(){
-    int i = 59876;
-    int seg = (i / 100) % 10;
-    printf("%d", seg);
+    int x = 2;
+    int y = 5;
+    int r;
 
-    return 0;
+    r = y & 0xFE;
+
+    for(int i = r; i >= 0; i--){
+        r = n >> i;
+    }
 }

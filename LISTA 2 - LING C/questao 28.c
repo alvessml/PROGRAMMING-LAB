@@ -1,29 +1,34 @@
 #include <stdio.h>
 
+void esconderBit(unsigned char, unsigned char);
+
 int main() {
-    unsigned char X, Y;
+    unsigned char x, y;
     printf("Digite o valor de X: ");
-    scanf("%hhu", &X);
+    scanf("%hhu", &x);
 
     printf("Digite o valor de Y (deve ser >= 5): ");
-    scanf("%hhu", &Y);
+    scanf("%hhu", &y);
 
-    if (Y < 5) {
-        printf("Erro: Y deve ser maior ou igual a 5.\n");
-        return;
-    }
-
-    for (int i = -4; i <= 4; i++) {
-        if (i == 0) continue; // Pula o próprio Y
-
-        unsigned char *ptr = &Y + i;
-
-        // Esconder os bits de X no bit menos significativo do elemento atual
-        *ptr = (*ptr & 0xFE) | (X & 0x01); // Limpa o LSB e coloca o bit menos significativo de X
-
-        // Shift para preparar o próximo bit de X
-        X >>= 1;
-    }
+    esconderBit(x, y);
 
     return 0;
+}
+
+
+void esconderBit(unsigned char a, unsigned char b){
+    if(b < 5){
+        printf("Erro. Digite um número y >= 5.\n");
+        return 0;
+    }
+
+    for(int i = -4; i <= 4; i++){
+        if(i == 0){
+            continue;   
+        }
+
+        unsigned char *py = &b + i;
+
+        *py = (*py & 0xFE) | 
+    }
 }
