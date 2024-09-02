@@ -9,6 +9,6 @@ int main(){
     r = y & 0xFE;
 
     for(int i = r; i >= 0; i--){
-        r = n >> i;
+        r = n >> i; 
     }
 }
