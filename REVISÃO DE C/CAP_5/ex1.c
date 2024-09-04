@@ -78,10 +78,82 @@ Razões p/ usar:
 
 /* PONTEIROS E MATRÍZES*/
 
-int main(){
-    char str[80], *p;
-    p = str; // Recebe o 1ª elemento da matriz
-    scanf("%s", str);
+// int main(){
+//     char str[80], *p;
+//     p = str; // Recebe o 1ª elemento da matriz
+//     scanf("%s", str);
     
-    printf("%c %c\n", str[4], *(p+4)); // imprimme o 5ª elemento da matriz
-}
+//     printf("%c %c\n", str[4], *(p+4)); // imprimme o 5ª elemento da matriz
+// }
+
+
+/* - Acessando elementos de matrizes*/
+
+// -- Indexação de matrízes
+
+// void puts(char *p){
+//     int t;
+//     for(t=0;p[t]; t++){
+//         putchar(p[t]);
+//     }
+// }
+
+// -- Aritmética de ponteiros
+
+// void puts(char *p){
+//     int t;
+//     while(*p){
+//         putchar(*s++);
+//     }
+// }
+
+
+
+
+/* MATRÍZES DE PONTEIROS*/
+/*
+- Declaração:
+<tipo> *<nome>[tamanho];
+
+int *notas[10];
+
+- Atribuição:
+notas[2] = &var;
+
+- Obter o conteúdo:
+printf("%d", *notas[2]);
+*/ 
+
+
+
+
+/* INDIREÇÃO MÚLTIPLA
+Ponteiro apontado para ponteiro
+
+- Declaração
+int **valor;
+
+Ex: */
+// int main(){
+//     int x, *p, **q;
+//     x = 10;
+//     p = &x;
+//     q = &p;
+//     printf("%d\n", **q);
+// }
+
+
+
+
+/*ALOCAÇÃO DINÂMICA
+Meio onde se obtém memória em tempo de execução. Mais usados
+são o malloc() e free();
+
+- Malloc():*/
+// Função
+// void *malloc(size_t numero_bytes);
+
+// Ex1:
+/*
+char *p;
+p = malloc(1000); Obtém mil bytes*/

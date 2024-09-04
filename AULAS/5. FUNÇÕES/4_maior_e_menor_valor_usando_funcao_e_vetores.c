@@ -15,7 +15,7 @@ int main(int argc, char **argv[]){
         exit(1);
     }
     
-     opcao = atoi(*(argv+1));
+    opcao = atoi(*(argv+1));
 
     int v[TAM];
 

@@ -29,7 +29,7 @@ int main(int argc, char **argv){
     c2.x = atoi(*(argv+3));
     c2.y = atoi(*(argv+4));
 
-    d = calcularDistancia(c1, )
+    d = calcularDistancia(c1, );
 
     printf("Distancia entre os pontos c1(%d, %d) e c2(%d, %d): %.2f\n", c1.x, c1.y, c2.x, c2.y, distancia);
 
