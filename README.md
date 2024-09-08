@@ -1,2 +1,2 @@
-# LABORATORIO DE PROGRAMACAO
- Racundo de aulas e projetos
+# Programming lab
+Drafting of classes and projects
