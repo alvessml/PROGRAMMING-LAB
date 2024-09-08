@@ -153,7 +153,20 @@ são o malloc() e free();
 // Função
 // void *malloc(size_t numero_bytes);
 
-// Ex1:
+// Ex:
 /*
 char *p;
-p = malloc(1000); Obtém mil bytes*/
+p = malloc(1000); Obtém mil bytes
+
+-=-=-=-=-=-=-=-=-=-
+int *p;
+p = malloc(50* sizeof(int));
+if(!p){
+    printf("Sem memória!!!")};
+    exit(1);
+*/
+
+/*
+- Free():
+
+void free(void*p); Libera memória, oposto de malloc()*/
