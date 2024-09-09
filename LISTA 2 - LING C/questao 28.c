@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-void esconderBit(unsigned char, unsigned char);
 
-int main() {
+int main(){
     unsigned char x, y;
     printf("Digite o valor de X: ");
     scanf("%hhu", &x);
@@ -10,25 +9,23 @@ int main() {
     printf("Digite o valor de Y (deve ser >= 5): ");
     scanf("%hhu", &y);
 
-    esconderBit(x, y);
-
-    return 0;
-}
-
-
-void esconderBit(unsigned char a, unsigned char b){
-    if(b < 5){
-        printf("Erro. Digite um número y >= 5.\n");
+    if(y < 5){
+        printf("Digite um número maior ou igual a 5!.\n");
         return 0;
-    }
+    } else{
+        for(int i = -4; i <= 4; i++){
+            if(i == 0){
+                continue;
+            }
 
-    for(int i = -4; i <= 4; i++){
-        if(i == 0){
-            continue;   
+            unsigned char *ptr = &y + i;
+
+            *ptr = (*ptr & 0xFE) | (x & 0x01);
+
+            x >>= 1;
+
+            printf("%p: %hhu\t", ptr, *(ptr));
         }
-
-        unsigned char *py = &b + i;
-
-        *py = (*py & 0xFE) | 
     }
+    return 0;
 }
